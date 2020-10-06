@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+  <title>Biblioteca</title>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="newbook.html">Cadastrar Livro</a></li>
+        <li><a href="buscalivro.html">Buscar Livros</a></li>
+        <li><a href="devolucao.html">Livros Emprestados</a></li>
+        <li><a href="verifica.html">Verificar Situação</a></li>
+        <li><a href="acesso.html">Login</a></li>
+        </ul>
+    </header>
+<section>
+    <form id="register">
+      <h3>Cadastre um livro</h3>
+      
+      <input type="text" name="bookName" id="bookName" placeholder="Nome do Livro">
+      
+      <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Nome Autor">
+      
+      <input type="text" name="bookPublisher" id="bookPublisher" placeholder="Nome Editora">
+      
+      <input type="number" name="numberOfPages" id="numberOfPages" placeholder="Numero de Paginas">
+      
+      <input type="text" name="bookCover" id="bookCover" placeholder="Link da Capa">
+      
+      <textarea name="synopsis" id="synopsis" cols="50" rows="10" placeholder="Sinopsia"></textarea>
+      <button id="btnRegister">Cadastre</button>
+    </form>
+
+    <div id="myModal" class="modal">
+            <div id="contentModel" class="modal-content">
+            <span id="btnCloseModal">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="txtSynopsis"></p>
+            </div>
+    </div>
+
+    <div id="AllBooks">
+            <h3 id="titleAllBooks">Todos os Livros</h3>
+            <div id="listOfAllBooks">
+            <p  id="emptyBookList">Nenhum livro cadastrado</p>
+            </div>
+    </div>
+
+</section>
+
+ <script src="biblioteca.js"></script>
+</body>
+</html>

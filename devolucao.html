@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+  <title>Biblioteca</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="newbook.html">Cadastrar Livro</a></li>
+      <li><a href="buscalivro.html">Buscar Livros</a></li>
+      <li><a href="devolucao.html">Livros Emprestados</a></li>
+      <li><a href="verifica.html">Verificar Situação</a></li>
+      <li><a href="acesso.html">Login</a></li>
+    </ul>
+  </header>
+  <section>
+    
+            <h3 id="titleAllBooks">Todos os Livros Emprestados</h3>
+            
+            <div id="listOfAllBooks">
+              <div id="Livro1">
+                <p id="bookTitle">Assim Falou Zaratustra: um livro para todos e para ninguém</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvjITZtz6T9tdKDL24VgwVPQvUvImAPEMCmvaPQN5rVXkYQDN3lmziXn0P39Ke82BCmbZ-ZlTJ&usqp=CAc"></p>
+                <br>
+                Autor: Friedrich Nietzsche<br>
+                Editora: Companhia das Letras<br>
+                <button id="btnSinopsys">Verificar Prazo</button>
+              </div>
+
+              <div id="Livro2">
+                <p id="bookTitle">Design de Interação: Além da Interação Humano-Computador</p>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41IyXxuDu9L._SX348_BO1,204,203,200_.jpg"></p>
+                <br>
+                Autor:  Yvonne Rogers<br>
+                Editora: Allen & Unwin<br>
+                <button id="btnRemove">Pagar Multa</button>
+              </div>
+
+            </div>
+    
+  </section>
+
+  <script src="biblioteca.js"></script>
+</body>
+
+</html>
